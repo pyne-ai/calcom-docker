@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: cal-web
+    name: testapp-pyne
     plan: standard
     repo: https://github.com/calcom/docker.git
     dockerfilePath: ./Dockerfile.render
@@ -23,5 +23,5 @@ services:
         value: 0cc0e6c35519bba620c9360cfe3e68d0
 databases:
   region: frankfurt
-  - name: cal-postgres
+  - name: testapp-pyne-postgres
     plan: starter
